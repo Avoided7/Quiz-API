@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Quizzes">
+  <database-model serializer="dbm" dbms="MSSQL_LOCALDB" family-id="MSSQL_LOCALDB" format-version="4.49">
+    <root id="1">
+      <Dbms>MSSQL_LOCALDB</Dbms>
+      <ServerVersion>15.0.4153</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="ApplicationAPI"/>
+    <database id="3" parent="1" name="BaseDb"/>
+    <database id="4" parent="1" name="BlogDB"/>
+    <database id="5" parent="1" name="D4Blog"/>
+    <database id="6" parent="1" name="eWalkCalculation"/>
+    <database id="7" parent="1" name="FolderSystem"/>
+    <database id="8" parent="1" name="HotelDataDb"/>
+    <database id="9" parent="1" name="ItemsReact"/>
+    <database id="10" parent="1" name="master"/>
+    <database id="11" parent="1" name="MediatorDb"/>
+    <database id="12" parent="1" name="model"/>
+    <database id="13" parent="1" name="msdb"/>
+    <database id="14" parent="1" name="QLanny"/>
+    <database id="15" parent="1" name="Quiz"/>
+    <database id="16" parent="1" name="Quizzes">
+      <Current>1</Current>
+    </database>
+    <database id="17" parent="1" name="Remind"/>
+    <database id="18" parent="1" name="SocialConnect"/>
+    <database id="19" parent="1" name="SocialConnectTest"/>
+    <database id="20" parent="1" name="tempdb"/>
+    <database id="21" parent="1" name="TestDB"/>
+    <database id="22" parent="1" name="ToyBase"/>
+    <database id="23" parent="1" name="ToyIdentities"/>
+    <database id="24" parent="1" name="voidseller"/>
+    <schema id="25" parent="16" name="INFORMATION_SCHEMA"/>
+    <schema id="26" parent="16" name="db_accessadmin"/>
+    <schema id="27" parent="16" name="db_backupoperator"/>
+    <schema id="28" parent="16" name="db_datareader"/>
+    <schema id="29" parent="16" name="db_datawriter"/>
+    <schema id="30" parent="16" name="db_ddladmin"/>
+    <schema id="31" parent="16" name="db_denydatareader"/>
+    <schema id="32" parent="16" name="db_denydatawriter"/>
+    <schema id="33" parent="16" name="db_owner"/>
+    <schema id="34" parent="16" name="db_securityadmin"/>
+    <schema id="35" parent="16" name="dbo">
+      <Current>1</Current>
+    </schema>
+    <schema id="36" parent="16" name="guest"/>
+    <schema id="37" parent="16" name="sys"/>
+  </database-model>
+</dataSource>
