@@ -8,17 +8,17 @@ public class CreateQuizVm
 
   [Required] public string Description { get; set; } = null!;
 
-  [Required] public List<QuestionVm> Questions { get; set; } = null!;
+  [Required] public List<CreateQuestionVm> Questions { get; set; } = null!;
 }
 
-public class QuestionVm
+public class CreateQuestionVm
 {
   [Required] public string Title { get; set; } = null!;
 
-  [Required] public List<OptionVm> Options { get; set; } = null!;
+  [Required] public List<CreateOptionVm> Options { get; set; } = null!;
 }
 
-public class OptionVm
+public class CreateOptionVm
 {
   [Required] public string Title { get; set; } = null!;
   [Required] public double Value { get; set; }

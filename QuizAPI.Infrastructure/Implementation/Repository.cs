@@ -7,7 +7,7 @@ using QuizAPI.Infrastructure.Data;
 namespace QuizAPI.Infrastructure.Implementation;
 
 public class Repository<T> : IRepository<T>
-  where T: EntityBase
+  where T: class, IEntity
 {
   private readonly QuizContext _dbContext;
 
@@ -62,8 +62,13 @@ public class Repository<T> : IRepository<T>
     _dbContext.Set<T>().Update(entity);
   }
 
-  public void Delete(T entity)
+  public void Remove(T entity)
   {
     _dbContext.Set<T>().Remove(entity);
+  }
+
+  public void RemoveRange(IEnumerable<T> entities)
+  {
+    _dbContext.Set<T>().RemoveRange(entities);
   }
 }

@@ -11,4 +11,7 @@ public interface IQuizService
   Task CreateAsync(Quiz quiz);
   Task UpdateAsync(Quiz quiz);
   Task DeleteAsync(Guid id);
+  
+  // CUSTOM
+  Task PassQuizAsync(PassedQuiz passedQuiz);
 }

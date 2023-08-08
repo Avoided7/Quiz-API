@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using QuizAPI.Domain.Entities;
 using QuizAPI.Domain.Interfaces;
 using QuizAPI.Infrastructure.Data;
 
@@ -21,7 +20,7 @@ public class UnitOfWork : IUnitOfWork
     return _dbContext.SaveChangesAsync();
   }
 
-  public IRepository<T> GetRequiredRepository<T>() where T : EntityBase
+  public IRepository<T> GetRequiredRepository<T>() where T: class, IEntity
   {
     return _serviceProvider.GetRequiredService<IRepository<T>>();
   }

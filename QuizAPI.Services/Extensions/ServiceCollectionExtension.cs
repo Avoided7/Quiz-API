@@ -8,7 +8,10 @@ public static class ServiceCollectionExtension
 {
   public static IServiceCollection RegisterServices(this IServiceCollection serviceCollection)
   {
-    serviceCollection.AddScoped<IQuizService, QuizService>();
+    serviceCollection
+      .AddScoped<IQuizService, QuizService>()
+      .AddScoped<IMemberService, MemberService>()
+      .AddScoped<ITokenService, TokenService>();
 
     return serviceCollection;
   }

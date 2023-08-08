@@ -8,5 +8,4 @@ public class MemberAnswer : EntityBase
   
   // Relations
   public Guid PassedQuizId { get; set; }
-  public PassedQuiz PassedQuiz { get; set; } = null!;
 }

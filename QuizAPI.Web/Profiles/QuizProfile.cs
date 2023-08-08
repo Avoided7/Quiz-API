@@ -8,8 +8,15 @@ public class QuizProfile : Profile
 {
   public QuizProfile()
   {
-    CreateMap<OptionVm, Option>();
-    CreateMap<QuestionVm, Question>();
+    CreateMap<CreateOptionVm, Option>();
+    CreateMap<CreateQuestionVm, Question>();
     CreateMap<CreateQuizVm, Quiz>();
+
+    CreateMap<Option, OptionVm>();
+    CreateMap<Question, QuestionVm>();
+    CreateMap<Quiz, QuizVm>();
+
+    CreateMap<MemberAnswerVm, MemberAnswer>();
+    CreateMap<PassedQuizVm, PassedQuiz>();
   }
 }

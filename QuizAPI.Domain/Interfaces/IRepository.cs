@@ -4,7 +4,7 @@ using QuizAPI.Domain.Entities;
 namespace QuizAPI.Domain.Interfaces;
 
 public interface IRepository<T>
-  where T: EntityBase
+  where T: class, IEntity
 {
   IQueryable<T> Get(params string[] includes);
   IQueryable<T> Get(Expression<Func<T, bool>> expression, params string[] includes);
@@ -13,5 +13,6 @@ public interface IRepository<T>
 
   void Create(T entity);
   void Update(T entity);
-  void Delete(T entity);
+  void Remove(T entity);
+  void RemoveRange(IEnumerable<T> entities);
 }

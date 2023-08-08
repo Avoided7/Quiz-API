@@ -1,6 +1,8 @@
-﻿namespace QuizAPI.Domain.Entities;
+﻿using QuizAPI.Domain.Interfaces;
 
-public abstract class EntityBase
+namespace QuizAPI.Domain.Entities;
+
+public abstract class EntityBase : IEntity
 {
   public Guid Id { get; set; } = Guid.NewGuid();
 }
